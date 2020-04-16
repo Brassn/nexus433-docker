@@ -1,0 +1,16 @@
+version: '3'
+
+#to enable the mqtt server uncomment all following commented lines
+services:
+    bridge:
+        build: ./src
+        devices:
+            - "/dev/gpiochip0:/dev/gpiochip0"
+#        depends_on:
+#            - mqtt
+        environment:
+            - MQTT_SERVER=mqtt
+#    mqtt:
+#        image: eclipse-mosquitto
+#        ports:
+#            - 1883:1883
