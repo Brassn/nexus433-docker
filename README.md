@@ -8,8 +8,8 @@ As I like to containerize every service and I didn't find a premade one for this
 ## Usage
 clone from git using 
 ```
-git clone https://github.com/Brassn/nexus433-docker-rpi  
-cd nexus433-docker-rpi
+git clone https://github.com/Brassn/nexus433-docker  
+cd nexus433-docker
 ```  
 Now set the MQTT_SERVER variable inside the docker-compose.yml file to point to your existing MQTT server instead of "mqtt". If a port other than 1883 needs to be specified look at the configuration chapter.  
 
