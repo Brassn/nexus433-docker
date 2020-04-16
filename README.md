@@ -7,13 +7,17 @@ As I like to containerize every service and I didn't find a premade one for this
 
 ## Usage
 clone from git using 
-```git clone https://github.com/Brassn/nexus433-docker-rpi  
-cd nexus433-docker-rpi```  
+```
+git clone https://github.com/Brassn/nexus433-docker-rpi  
+cd nexus433-docker-rpi
+```  
 Now set the MQTT_SERVER variable inside the docker-compose.yml file to point to your existing MQTT server instead of "mqtt". If a port other than 1883 needs to be specified look at the configuration chapter.  
 If you do not have an existing server uncomment the preconfigured mosquitto server already provided in the lines beneath. 
 If you choose to enable the preconfigured server you do not need to change the MQTT_SERVER variable.  
 To build and start the container(s) execute 
-```sudo docker-compose up -d```
+```
+sudo docker-compose up -d
+```
 
 ## Configuration
 So far only the MQTT_SERVER is easy to configure using docker environment variables. The port 1883 is assumed and cannot be canged this way.  
