@@ -2,7 +2,7 @@
 This repository provides a Docker container for the easy to use 433-to-MQTT nexus bridge from aquaticus found here:  
 https://github.com/aquaticus/nexus433  
 
-I was looking for a 433Mhz bridge to MQTT to run on a raspberry pi and this seemed the best option.  
+I was looking for a 433Mhz bridge to MQTT to run on a Raspberry Pi and this seemed the best option.  
 As I like to containerize every service and I didn't find a premade one for this project I created one.  
 
 ## Usage
@@ -32,4 +32,5 @@ As it seems this would otherwise only change the default port from 17 to 1 on th
 
 ## Tested hardware
 Tested on an Raspberry Pi 4 Model B running on Arch Linux using a superheterodyne RXB6 433Mhz receiver. 
-I used the code from https://github.com/jorgegarciadev/Arduinonexus to quickly create a compatible sender using an Arduino nano.
+I used the code from https://github.com/jorgegarciadev/Arduinonexus to quickly create a compatible sender using an Arduino nano.  
+Using this code as groundwork the nexus protocol can easily be utilised to create custom sensors using 433Mhz.
