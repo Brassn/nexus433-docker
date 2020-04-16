@@ -1,4 +1,4 @@
-# nexus433 Docker container for 
+# nexus433 Docker container (for the Raspberry Pi and possibly more)
 This repository provides a Docker container for the easy to use 433-to-MQTT nexus bridge from aquaticus found here:  
 https://github.com/aquaticus/nexus433  
 
