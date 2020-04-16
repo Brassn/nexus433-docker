@@ -12,8 +12,10 @@ git clone https://github.com/Brassn/nexus433-docker-rpi
 cd nexus433-docker-rpi
 ```  
 Now set the MQTT_SERVER variable inside the docker-compose.yml file to point to your existing MQTT server instead of "mqtt". If a port other than 1883 needs to be specified look at the configuration chapter.  
+
 If you do not have an existing server uncomment the preconfigured mosquitto server already provided in the lines beneath. 
 If you choose to enable the preconfigured server you do not need to change the MQTT_SERVER variable.  
+
 To build and start the container(s) execute 
 ```
 sudo docker-compose up -d
@@ -30,4 +32,4 @@ As it seems this would otherwise only change the default port from 17 to 1 on th
 
 ## Tested hardware
 Tested on an Raspberry Pi 4 Model B running on Arch Linux using a superheterodyne RXB6 433Mhz receiver. 
-I used the code from https://github.com/jorgegarciadev/Arduinonexus to quickly create a compatible sender using a Arduino nano.
+I used the code from https://github.com/jorgegarciadev/Arduinonexus to quickly create a compatible sender using an Arduino nano.
