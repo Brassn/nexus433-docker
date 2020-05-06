@@ -28,7 +28,7 @@ If you need to access the entire configuration you can provide a nexus433.ini fi
 ## Compatibility
 nexus433 tries to lookup the hardware using /sys/firmware/devicetree/base/model but this is not possible from inside the container. 
 Therefore I disabled this detection to always assume a Raspberry Pi. 
-As it seems this would otherwise only change the default port from 17 to 1 on the Orange Pi, which can also be achieved by changing the configuration file accordingly.
+As it seems this would otherwise only change the default pin from 17 to 1 on the Orange Pi, which can also be achieved by changing the configuration file accordingly.
 
 ## Tested hardware
 Tested on an Raspberry Pi 4 Model B running on Arch Linux using a superheterodyne RXB6 433Mhz receiver. 
